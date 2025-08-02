@@ -17,7 +17,8 @@
         "zeroBaseFee"      : true,
         "clique": {
             "blockperiodseconds": 5,
-            "epochlength"       : 30000
+            "epochlength"       : 30000,
+            "createemptyblocks" : true
         }
     },
     "coinbase"  : "0x0000000000000000000000000000000000000000",
