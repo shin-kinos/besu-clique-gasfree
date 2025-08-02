@@ -1,10 +1,6 @@
 # Chain
 genesis-file="genesis.json"
 
-# Mining
-miner-enabled=true
-miner-coinbase="0xfe3b557e8fb62b89f4916b721be55ceb828dbd73"
-
 # Network
 rpc-http-cors-origins=["all"]
 host-allowlist=["all"]
