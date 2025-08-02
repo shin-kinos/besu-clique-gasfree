@@ -1,0 +1,22 @@
+# Chain
+genesis-file="genesis.json"
+
+# Mining
+miner-enabled=true
+miner-coinbase="0xfe3b557e8fb62b89f4916b721be55ceb828dbd73"
+
+# Network
+rpc-http-cors-origins=["all"]
+host-allowlist=["all"]
+rpc-http-api=["ETH", "NET", "WEB3", "CLIQUE"]
+
+rpc-http-enabled=true
+
+rpc-http-host="127.0.0.1"
+rpc-http-port=4989
+
+# Data
+data-path="besu-data"
+
+# Minimum gas price is 0 (gas-free)
+min-gas-price=0x0

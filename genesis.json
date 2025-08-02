@@ -1,0 +1,47 @@
+{
+    "description"  : "This is a sample genesis block data for Clique (PoA) on Besu's private net.",
+    "referenceLink": [
+        "https://besu.hyperledger.org/private-networks/tutorials/clique",
+        "https://besu.hyperledger.org/stable/private-networks/how-to/configure/free-gas",
+        "https://github.com/hyperledger/besu/tree/main/config/src/main/resources"
+    ],
+    "author": {
+        "name"   : "Shintaro Kinoshita",
+        "contact": "shintaro.kinoshita@e1datascience.co.uk",
+        "gitHub" : "https://github.com/shin-kinos"
+    },
+    "config": {
+        "chainId"          : 4649,
+        "contractSizeLimit": 2147483647,
+        "londonBlock"      : 0,
+        "zeroBaseFee"      : true,
+        "clique": {
+            "blockperiodseconds": 5,
+            "epochlength"       : 30000
+        }
+    },
+    "coinbase"  : "0x0000000000000000000000000000000000000000",
+    "difficulty": "0x1",
+    "gasLimit"  : "0x1fffffffffffff",
+    "mixHash"   : "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "nonce"     : "0x0",
+    "timestamp" : "0x5c51a607",
+    "extraData" : "0x0000000000000000000000000000000000000000000000000000000000000000fe3b557e8fb62b89f4916b721be55ceb828dbd730000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "alloc": {
+        "0xfe3b557e8fb62b89f4916b721be55ceb828dbd73": {
+            "privateKey": "0x8f2a55949038a9610f50fb23b5883af3b4ecb3c3bb792cbcefbd1542c692be63",
+            "comment"   : "This is the initial signer account in Clique - the balance is 100000000000000000000 Wei (100 ETH).",
+            "balance"   : "0x56bc75e2d63100000"
+        },
+        "0x627306090abaB3A6e1400e9345bC60c78a8BEf57": {
+            "privateKey": "0xc87509a1c067bbde78beb793e6fa76530b6382a4c0241e5e4a9ec0a0f44dc0d3",
+            "comment"   : "This is standard participant account - the balance is 9999000000000000000000 Wei (9999 ETH).",
+            "balance"   : "0x21e0c0013070adc0000"
+        },
+        "0xf17f52151EbEF6C7334FAD080c5704D77216b732": {
+            "privateKey": "0xae6ae8e5ccbfb04590405997ee2d52d2b330726137b875053c36d94e974d162f",
+            "comment"   : "This is another standard participant account - the balabce is 0 Wei.",
+            "balance"   : "0x0"
+        }
+    }
+}
